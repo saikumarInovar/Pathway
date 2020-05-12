@@ -23,7 +23,11 @@ public class BasePage
 	public  WebDriver driver;
 	final static org.apache.log4j.Logger logger = org.apache.log4j.Logger.getLogger(BasePage.class);
 
-	
+	public void geturl(String url)
+	{
+		driver.get(url);
+		driver.manage().window().maximize();
+	}
 
 	public void click(By locator) {
 		WebElement element = driver.findElement(locator);
@@ -181,7 +185,7 @@ public class BasePage
 			driver = DriverManager.getedgedriver();
 		}
 		
-		else if (browsername.equalsIgnoreCase("headlesschrome")) {
+		else if (browsername.equals("headlesschrome")) {
 			driver = DriverManager.getHeadlessChromeDriver();
 		}
 		

@@ -21,12 +21,6 @@
 			<artifactId>testng</artifactId>
 			<version>6.14.3</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/javax.mail/mail -->
-		<dependency>
-			<groupId>javax.mail</groupId>
-			<artifactId>mail</artifactId>
-			<version>1.4</version>
-		</dependency>
 <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
 <dependency>
     <groupId>io.github.bonigarcia</groupId>
@@ -43,11 +37,6 @@
 			<groupId>com.aventstack</groupId>
 			<artifactId>extentreports</artifactId>
 			<version>3.1.5</version>
-		</dependency><!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
-		<dependency>
-			<groupId>io.github.bonigarcia</groupId>
-			<artifactId>webdrivermanager</artifactId>
-			<version>3.6.2</version>
 		</dependency>
 		<dependency>
 			<groupId>info.cukes</groupId>
@@ -77,6 +66,13 @@
 			<version>2.12.2</version>
 			<scope>provided</scope>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi</artifactId>
+    <version>4.1.2</version>
+</dependency>
+		
 		<dependency>
 			<groupId>info.cukes</groupId>
 			<artifactId>cucumber-testng</artifactId>
@@ -175,8 +171,8 @@
 							<outputDirectory>${project.build.directory}/cucumber-reports</outputDirectory>
 				 		<cucumberOutput>${project.build.directory}/cucumber-reports/Cucumber.json</cucumberOutput>
 				 -->		
-				 			<outputDirectory> C:\Inovar_Projects\Pathway\target\cucumber-reports</outputDirectory>
-				  		   <cucumberOutput>C:\Inovar_Projects\Pathway\target\cucumber-reports\Cucumber.json</cucumberOutput>
+				 			<outputDirectory> C:\Users\saiku\git\Pathway\Pathway_Automationscript\Pathwayreports</outputDirectory>
+				  		   <cucumberOutput>C:\Users\saiku\git\Pathway\Pathway_Automationscript\Pathwayreports\Cucumber.json</cucumberOutput>
 				 	
 				 			<skippedFails>true</skippedFails>
 							<enableFlashCharts>false</enableFlashCharts>

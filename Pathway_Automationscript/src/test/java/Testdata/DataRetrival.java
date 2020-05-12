@@ -11,8 +11,8 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class DataRetrival 
 {
-	String UserNameSheet = "D:\\workspace\\Pathway_Automationscript\\Pathwayusercredtinals.xlsx";
-	String OldSiteSheet = "D:\\workspace\\Pathway_Automationscript\\Old Sites Data.xlsx";
+	String UserNameSheet = "C:\\Users\\saiku\\git\\Pathway\\Pathway_Automationscript\\Pathwayusercredtinals.xlsx";
+	String OldSiteSheet = "C:\\Users\\saiku\\git\\Pathway\\Pathway_Automationscript\\Old Sites Data.xlsx";
 	List<String> Usernames = new ArrayList<String>();
 	List<String> passwords = new ArrayList<String>();
 	int usernamePos = 1;
@@ -32,7 +32,7 @@ public class DataRetrival
 	            Sheet datatypeSheet = workbook.getSheetAt(0);
 	          
 	            // Username and passwords
-	            for(int i = 1;i<datatypeSheet.getLastRowNum();i++  ) {
+	            for(int i = 0;i<datatypeSheet.getLastRowNum();i++  ) {
 	            Usernames.add(datatypeSheet.getRow(i).getCell(usernamePos).toString());
 	            passwords.add(datatypeSheet.getRow(i).getCell(passwordPos).toString());
 	            }          
@@ -48,7 +48,7 @@ public class DataRetrival
 	            Sheet datatypeSheet = workbook.getSheetAt(0);
 	          
 	            // Username and passwords
-	            for(int i = 1;i<datatypeSheet.getLastRowNum();i++  ) {
+	            for(int i = 0;i<datatypeSheet.getLastRowNum();i++  ) {
 	            column_1.add(datatypeSheet.getRow(i).getCell(column_1_Pos).toString());
 	            column_2.add(datatypeSheet.getRow(i).getCell(column_2_Pos).toString());
 	            }          
