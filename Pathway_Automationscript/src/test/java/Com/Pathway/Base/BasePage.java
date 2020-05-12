@@ -20,7 +20,7 @@ import Com.Pathway.Drivermanager.DriverManager;
 public class BasePage
 {
 
-	public  WebDriver driver;
+	public static  WebDriver driver;
 	final static org.apache.log4j.Logger logger = org.apache.log4j.Logger.getLogger(BasePage.class);
 
 	public void geturl(String url)

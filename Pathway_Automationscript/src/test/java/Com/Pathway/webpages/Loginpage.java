@@ -3,14 +3,18 @@ package Com.Pathway.webpages;
 import org.openqa.selenium.By;
 
 import Com.Pathway.Base.BasePage;
+import Com.Pathway.users.MarketUser;
 
 public class Loginpage extends BasePage
+
 {
+	
+	
 	private By Emailfieldbox = By.id("i0116");
 	private By Nextbuttonforsignin = By.id("idSIButton9");
 	private By Passwordfiledbox = By.id("i0118");
 	private By signinbutton = By.cssSelector("#idSIButton9");
-	private By Yesbutton = By.xpath("#idSIButton9");
+	private By Yesbutton = By.cssSelector("#idSIButton9");
 	private By loginsecondaccount = By.xpath("(.//*[@data-bind='imgSrc'])[3]");
 	private By loginwiththirdaccount = By.xpath("(.//*[@data-bind='imgSrc'])[5]");
 	private By loginwithfourthaccount = By.xpath("(.//*[@data-bind='imgSrc'])[7]");

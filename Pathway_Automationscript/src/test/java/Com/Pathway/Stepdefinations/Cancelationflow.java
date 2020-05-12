@@ -23,7 +23,7 @@ public class Cancelationflow extends BasePage
 	Loginpage login = new Loginpage();
 	LogoutPage logout = new LogoutPage();
 	@Given("^Enter Url of application into the \"([^\"]*)\" browser$")
-	public void enter_Url_of_application_into_the_browser(String browsername) throws Throwable 
+	public void enter_Url_of_application_into_the_browser(String browsername)
 	{
 		init(browsername);
 		geturl(Pathwayconstants.URL_OF_THE_APPLICATION);
@@ -39,47 +39,47 @@ public class Cancelationflow extends BasePage
 	}
 
 	@Then("^Rise a Cancelation request with Marketuser (\\d+)$")
-	public void rise_a_Cancelation_request_with_Marketuser(int i) throws Throwable {
+	public void rise_a_Cancelation_request_with_Marketuser(int i)  {
 	    markertuser.cancelationRequest(i);
 	}
 
 	@Then("^Logout MarketUser after rise a request for  Cancelation$")
-	public void logout_MarketUser_after_rise_a_request_for_Cancelation() throws Throwable {
+	public void logout_MarketUser_after_rise_a_request_for_Cancelation()  {
 	    logout.logoutUser();
 	}
 
 	@When("^RPM user login with valid credtinals for Cancelation process$")
-	public void rpm_user_login_with_valid_credtinals_for_Cancelation_process() throws Throwable 
+	public void rpm_user_login_with_valid_credtinals_for_Cancelation_process()
 	{
 		login.loginwithsecondaccount();
 	    rpmuser.loginwithRPMUser();
 	}
 
 	@Then("^RPM user \"([^\"]*)\" Cancelation signal$")
-	public void rpm_user_Cancelation_signal(String statusoftheapplication) throws Throwable 
+	public void rpm_user_Cancelation_signal(String statusoftheapplication)  
 	{
 		
 	 rpmuser.CancelationrequestwithRPMuser(statusoftheapplication);
 	}
 
 	@Then("^Logout RPM user after check the status of cancelation request$")
-	public void logout_RPM_user_after_check_the_status_of_cancelation_request() throws Throwable {
+	public void logout_RPM_user_after_check_the_status_of_cancelation_request()  {
 		logout.logoutUser();
 	}
 
 	@When("^RRM user login with valid credtinals for Cancelation process$")
-	public void rrm_user_login_with_valid_credtinals_for_Cancelation_process() throws Throwable {
+	public void rrm_user_login_with_valid_credtinals_for_Cancelation_process()  {
 	    login.loginwithThirdaccount();
 	    rrmuser.loginwithRRMUser();
 	}
 
 	@Then("^RRM user \"([^\"]*)\" Cancelation Signal$")
-	public void rrm_user_Cancelation_Signal(String statusoftheapplication) throws Throwable {
+	public void rrm_user_Cancelation_Signal(String statusoftheapplication) {
 	  rrmuser.CancelationrequestwithRRMuser(statusoftheapplication);
 	}
 
 	@Then("^Logout RRM user after check the status of cancelation request$")
-	public void logout_RRM_user_after_check_the_status_of_cancelation_request() throws Throwable {
+	public void logout_RRM_user_after_check_the_status_of_cancelation_request() {
 	   logout.logoutUser();
 	}
 
@@ -90,17 +90,17 @@ public class Cancelationflow extends BasePage
 	}
 
 	@Then("^NOC user \"([^\"]*)\" Cancelation signal$")
-	public void noc_user_Cancelation_signal(String statusoftheapplication) throws Throwable {
+	public void noc_user_Cancelation_signal(String statusoftheapplication)  {
 	    nocuser.CancelationrequestwithNOCuser(statusoftheapplication);
 	}
 
 	@Then("^Logout NOC user after suucesful check the status of Cancelation Process$")
-	public void logout_NOC_user_after_suucesful_check_the_status_of_Cancelation_Process() throws Throwable {
+	public void logout_NOC_user_after_suucesful_check_the_status_of_Cancelation_Process()  {
 	    logout.logoutUser();
 	}
 
 	@When("^LEGAL user login with valid credtinals for Cancelation Process$")
-	public void legal_user_login_with_valid_credtinals_for_Cancelation_Process() throws Throwable {
+	public void legal_user_login_with_valid_credtinals_for_Cancelation_Process()  {
 	    login.loginwithfifthaccount();
 	    legaluser.loginwithLeaglUser();
 	}

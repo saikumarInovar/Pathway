@@ -13,13 +13,13 @@ private By fullCancelation = By.xpath("//label[contains(text(),'Full Cancellatio
 private By txidfieldbox = By.xpath("//input[@placeholder='Enter TX Site ID']");
 private By rxidfieldbox = By.xpath("//input[@placeholder='Enter RX Site ID']");
 private By searchaccountforcancelation = By.cssSelector("#search-button");
-private By CancelationchecklistboxforMU = By.xpath("//div[@class='slick-cell l0 r0 true']");
+private By CancelationchecklistboxforMU = By.xpath("//div[@class='slick-cell l0 r0 true']//label");
 private By reasonlbl = By.className("reject-text");
 private By selectreasondropdown = By.xpath("//select[@class='ng-untouched ng-pristine ng-valid']");
 private By proceedbutton = By.xpath("//button[contains(text(),'PROCEED')]");
 private By confirmationbutton = By.xpath("(.//*[text()='YES'])[1]");
 private By requestOKbutton = By.xpath("(.//*[text()='OK'])[1]");
-private By RPMuserchecklistbox = By.cssSelector("div.container-fluid.content:nth-child(1) div.row.m-0.p-0 div.main-content.m-0.p-0 div.page-info div.mv-tabs-container div.w-100.m-0.p-0 div.col-xs-12.m-0.p-0 div.w-100.pl-3.pr-3 div.grid-component.grid-component-primary.grid-component-primary--pos div.gridPane div.slickgrid-container.slickgrid_50481.ui-widget div.slick-pane.slick-pane-top.slick-pane-left:nth-child(4) div.slick-viewport.slick-viewport-top.slick-viewport-left div.grid-canvas.grid-canvas-top.grid-canvas-left div.ui-widget-content.slick-row.even:nth-child(1) > div.slick-cell.l0.r0.true:nth-child(1)");
+private By RPMuserchecklistbox = By.xpath("//body/app-root/app-cancellations/app-mu-cancellationsdatagrid/div[@class='container-fluid content']/div[@class='row m-0 p-0']/div[@class='main-content m-0 p-0']/div[@class='page-info']/div[@class='mv-tabs-container']/section[@id='tabs']/div[@class='w-100 m-0 p-0']/div[@class='col-xs-12 m-0 p-0']/app-admin-grid/div[@class='w-100 pl-3 pr-3']/div[@class='grid-component grid-component-primary grid-component-primary--pos']/angular-slickgrid/div[@id='slickGridContainer-grid4']/div[@id='grid4']/div[@class='slick-pane slick-pane-top slick-pane-left']/div[@class='slick-viewport slick-viewport-top slick-viewport-left']/div[@class='grid-canvas grid-canvas-top grid-canvas-left']/div[1]/div[1]");
 private By approvebutton = By.name("approveBtn:0");
 private By rejectbutton = By.name("rejectBtn:0");
 private By selectreasonforrejection = By.xpath("//select[@class='w-100 ng-untouched ng-pristine ng-valid']");

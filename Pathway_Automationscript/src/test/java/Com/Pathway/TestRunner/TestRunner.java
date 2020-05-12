@@ -8,7 +8,12 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 features={"C:\\Users\\saiku\\git\\Pathway\\Pathway_Automationscript\\src\\test\\java\\Featurefiles\\CancelationRequest.Feature"},glue="Com.Pathway.Stepdefinations",
-monochrome = true,dryRun = false,strict = true)
+monochrome = true,dryRun = false,strict = true,
+format = {
+        "pretty",
+        "html:test-output",
+       "json:target/Pathwayreports/Cucumber.json",
+         "junit:junit_xml/cucumber.xml"})
 public class TestRunner {
 
 }

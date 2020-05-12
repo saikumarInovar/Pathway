@@ -16,6 +16,10 @@ public class MarketUser
 	{
 		String email = data.getUsername(1);
 		String password = data.getPassword(1);
+		/*
+		 * String email = data.getUsername(1); String password = data.getPassword(1);
+		 * System.out.println(email); System.out.println(password);
+		 */
 		login.doLogin(email, password);
 	}
 	

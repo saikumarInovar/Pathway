@@ -35,6 +35,9 @@ public class DataRetrival
 	            for(int i = 0;i<datatypeSheet.getLastRowNum();i++  ) {
 	            Usernames.add(datatypeSheet.getRow(i).getCell(usernamePos).toString());
 	            passwords.add(datatypeSheet.getRow(i).getCell(passwordPos).toString());
+				/*
+				 * System.out.println(Usernames); System.out.println(passwords);
+				 */
 	            }          
 	} catch (Exception e) {
 	// TODO: handle exception
@@ -51,6 +54,9 @@ public class DataRetrival
 	            for(int i = 0;i<datatypeSheet.getLastRowNum();i++  ) {
 	            column_1.add(datatypeSheet.getRow(i).getCell(column_1_Pos).toString());
 	            column_2.add(datatypeSheet.getRow(i).getCell(column_2_Pos).toString());
+				/*
+				 * System.out.println(column_1); System.out.println(column_2);
+				 */
 	            }          
 	} catch (Exception e) {
 	// TODO: handle exception
@@ -68,9 +74,12 @@ public class DataRetrival
 	public String getColumn_1(int i) {
 	return column_1.get(i);
 	}
+	
+	
 	 
 	public String getColumn_2(int i) {
 	return column_2.get(i);
+	
 	}
 	 
 	public DataRetrival() {

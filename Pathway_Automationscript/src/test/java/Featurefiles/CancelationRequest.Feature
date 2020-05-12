@@ -5,7 +5,7 @@ Scenario: Rise a cancelation request with Market user
 
 Given Enter Url of application into the "chrome" browser
 When Market user loginwith valid credtinals for Cancelation process
-Then Rise a Cancelation request with Marketuser 258
+Then Rise a Cancelation request with Marketuser 260
 Then Logout MarketUser after rise a request for  Cancelation 
 
 @tag2
