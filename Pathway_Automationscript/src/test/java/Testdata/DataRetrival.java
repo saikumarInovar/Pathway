@@ -32,7 +32,7 @@ public class DataRetrival
 	            Sheet datatypeSheet = workbook.getSheetAt(0);
 	          
 	            // Username and passwords
-	            for(int i = 0;i<datatypeSheet.getLastRowNum();i++  ) {
+	            for(int i = 0;i<=datatypeSheet.getLastRowNum();i++  ) {
 	            Usernames.add(datatypeSheet.getRow(i).getCell(usernamePos).toString());
 	            passwords.add(datatypeSheet.getRow(i).getCell(passwordPos).toString());
 				/*

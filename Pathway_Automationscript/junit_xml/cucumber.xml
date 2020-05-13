@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="6" time="521.062859">
+<testcase classname="check the  functionality of renewal a sigal with Pathway tool" name="Rise a Renewal request with Market user" time="125.041056">
+<system-out><![CDATA[Given Enter Url of application into the "chrome" browsern for Renewal process.passed
+When Market user loginwith valid credtinals for Renewal process.............passed
+Then Rise a Renewal  request with Marketuser 264............................passed
+Then Logout MarketUser after rise a request for  Renewal process............passed
+]]></system-out>
+</testcase>
+<testcase classname="check the  functionality of renewal a sigal with Pathway tool" name="Check the status of Renewal Request with MDU user" time="80.490633">
+<system-out><![CDATA[When MDU user login with valid credtinals for Renewal process...............passed
+Then MDU user "Approved" Renewal signal.....................................passed
+Then Logout MDU user after check the status of Renewal request..............passed
+]]></system-out>
+</testcase>
+<testcase classname="check the  functionality of renewal a sigal with Pathway tool" name="Check the staus of the Renewal Request with MO user" time="81.415149">
+<system-out><![CDATA[When MO user login with valid credtinals for Renewal process................passed
+Then MO user "Approved" Renewal Signal......................................passed
+Then Logout MO user after check the status of Renewal request...............passed
+]]></system-out>
+</testcase>
+<testcase classname="check the  functionality of renewal a sigal with Pathway tool" name="Check the status of the Renewal Request with RPM user" time="81.336694">
+<system-out><![CDATA[When RPM user login with Valid credtinals for Renewal process...............passed
+Then RPM user "Approved" Renewal signal.....................................passed
+Then Logout RPM user after suucesful check the status of Renewal Process....passed
+]]></system-out>
+</testcase>
+<testcase classname="check the  functionality of renewal a sigal with Pathway tool" name="Check the status of the Renewal Request with NOC user" time="68.152989">
+<system-out><![CDATA[When NOC user login with Valid credtinals for Renewal process...............passed
+Then NOC user "Approved" Renewal signal.....................................passed
+Then Logout NOC user after suucesful check the status of Renewal Process....passed
+]]></system-out>
+</testcase>
+<testcase classname="check the  functionality of renewal a sigal with Pathway tool" name="Check the status of the Renewal Request Legal user" time="84.626338">
+<system-out><![CDATA[When LEGAL user login with valid credtinals for Renewal Process.............passed
+Then Request send to FCC with Legal user FOR Renewal PROCESS................passed
+Then Logout LEGAL user after succesful Renewal Request Send to FCC..........passed
+]]></system-out>
+</testcase>
+</testsuite>

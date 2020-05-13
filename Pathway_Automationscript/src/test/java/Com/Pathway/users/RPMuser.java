@@ -3,6 +3,7 @@ package Com.Pathway.users;
 import Com.Pathway.webpages.CancelationPage;
 import Com.Pathway.webpages.Homepage;
 import Com.Pathway.webpages.Loginpage;
+import Com.Pathway.webpages.Renewalflow;
 import Testdata.DataRetrival;
 
 public class RPMuser 
@@ -12,7 +13,7 @@ public class RPMuser
 	Homepage homepage = new Homepage();
 	CancelationPage cancel = new CancelationPage();
 	DataRetrival data = new DataRetrival();
-	
+	Renewalflow renewalpage = new Renewalflow();
 	public void loginwithRPMUser()
 	{
 		String email = data.getUsername(2);
@@ -31,6 +32,18 @@ public class RPMuser
 		}
 		else {
 			cancel.rejectcancelationwithRPMuser();
+		}
+	}
+	
+	public void RenewalrequetwithRPMuser(String statsuoftheapplication)
+	{
+		homepage.renewalbutton();
+		if (statsuoftheapplication.equals("Approved"))
+		{
+			renewalpage.renewlapprovewithRPMuser();
+		}
+		else {
+			renewalpage.rejectrenewalwithRPMuser();
 		}
 	}
 }

@@ -19,7 +19,7 @@ public class Loginpage extends BasePage
 	private By loginwiththirdaccount = By.xpath("(.//*[@data-bind='imgSrc'])[5]");
 	private By loginwithfourthaccount = By.xpath("(.//*[@data-bind='imgSrc'])[7]");
 	private By loginwithfifthaccount = By.xpath("(.//*[@data-bind='imgSrc'])[9]");
-	
+	private By loginwithsixthaccount = By.xpath("(.//*[@data-bind='imgSrc'])[11]");
 	
 	public void doLogin( String email, String password)
 	{
@@ -57,6 +57,11 @@ public class Loginpage extends BasePage
 	public void loginwithfifthaccount()
 	{
 		click(loginwithfifthaccount);
+		sleep();
+	}
+	public void loginwitsixthaccount()
+	{
+		click(loginwithsixthaccount);
 		sleep();
 	}
 

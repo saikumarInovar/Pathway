@@ -3,6 +3,7 @@ package Com.Pathway.users;
 import Com.Pathway.webpages.CancelationPage;
 import Com.Pathway.webpages.Homepage;
 import Com.Pathway.webpages.Loginpage;
+import Com.Pathway.webpages.Renewalflow;
 import Testdata.DataRetrival;
 
 public class LegalUser 
@@ -11,6 +12,7 @@ public class LegalUser
 	Homepage homepage = new Homepage();
 	CancelationPage cancel = new CancelationPage();
 	DataRetrival data = new DataRetrival();
+	Renewalflow  renewalpage = new Renewalflow();
 	
 	public void loginwithLeaglUser()
 	{
@@ -26,5 +28,13 @@ public class LegalUser
 		
 		cancel.sendtoFCCwithLegaluser();
 	}
+	
+	public void renewalrequestsendtoFCCwithLegalsuer()
+	{
+		homepage.renewalbutton();
+		renewalpage.sendtoFCCforrenewalconnection();
+	}
+	
+	
 
 }

@@ -3,6 +3,7 @@ package Com.Pathway.users;
 import Com.Pathway.webpages.CancelationPage;
 import Com.Pathway.webpages.Homepage;
 import Com.Pathway.webpages.Loginpage;
+import Com.Pathway.webpages.Renewalflow;
 import Testdata.DataRetrival;
 
 public class NOCuser 
@@ -11,6 +12,7 @@ public class NOCuser
 	Homepage homepage = new Homepage();
 	CancelationPage cancel = new CancelationPage();
 	DataRetrival data = new DataRetrival();
+	Renewalflow renewalpage = new Renewalflow();
 	
 	public void loginwithNOCUser()
 	{
@@ -30,6 +32,17 @@ public class NOCuser
 		}
 		else {
 			cancel.rejectcancelationwithNOCuser();
+		}
+	}
+	public void renewalrequestwithNOCuser(String statusoftheapplication)
+	{
+		homepage.renewalbutton();		
+		if (statusoftheapplication.equals("Approved"))
+		{
+			renewalpage.renewlapprovewithNOCuser();
+		}
+		else {
+			renewalpage.rejectrenewalwithNOCuser();
 		}
 	}
 }
