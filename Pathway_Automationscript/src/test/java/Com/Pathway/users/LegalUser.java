@@ -1,5 +1,6 @@
 package Com.Pathway.users;
 
+import Com.Pathway.webpages.Buildoutflow;
 import Com.Pathway.webpages.CancelationPage;
 import Com.Pathway.webpages.Homepage;
 import Com.Pathway.webpages.Loginpage;
@@ -13,6 +14,7 @@ public class LegalUser
 	CancelationPage cancel = new CancelationPage();
 	DataRetrival data = new DataRetrival();
 	Renewalflow  renewalpage = new Renewalflow();
+	Buildoutflow buildout = new Buildoutflow();
 	
 	public void loginwithLeaglUser()
 	{
@@ -33,6 +35,12 @@ public class LegalUser
 	{
 		homepage.renewalbutton();
 		renewalpage.sendtoFCCforrenewalconnection();
+	}
+	public void sendtoFCCbuildrequestwithLegalsuer()
+	{
+		homepage.Buildoutbutton();
+		buildout.sendtoFCCbuildoutrequest();
+		
 	}
 	
 	

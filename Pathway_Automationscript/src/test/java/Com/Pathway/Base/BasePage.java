@@ -22,6 +22,7 @@ public class BasePage
 
 	public static  WebDriver driver;
 	final static org.apache.log4j.Logger logger = org.apache.log4j.Logger.getLogger(BasePage.class);
+	
 
 	public void geturl(String url)
 	{
@@ -29,9 +30,16 @@ public class BasePage
 		driver.manage().window().maximize();
 	}
 
+	
 	public void click(By locator) {
 		WebElement element = driver.findElement(locator);
 		element.click();
+		element.clear();
+	}
+	public void Cleartext(By locator)
+	{
+		WebElement element = driver.findElement(locator);
+		element.clear();
 	}
 	public void MOuseoverelement( By locator)
 	{

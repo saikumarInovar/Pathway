@@ -43,9 +43,7 @@ public class Renewalflow extends BasePage
 		sleep();
 		scrollintoelement(reasonlbl);
 		sleep();
-		select(reasonforrenewal, " Test Child Renewal Reason "
-				+ ""
-				+ "");
+		select(reasonforrenewal, " Test Child Renewal Reason ");
 		sleep();
 		scrollintoelement(proceedbutton);
 		sleep();
@@ -74,7 +72,7 @@ public class Renewalflow extends BasePage
       sleep();
       click(rejectrenewalbutton);
       sleep();
-      select(rejectreasonforrenewal, "test");
+      select(rejectreasonforrenewal, "Test Child Renewal Reason");
       sleep();
       click(rejectconfirmationbutton);
       sleep();
@@ -95,7 +93,7 @@ public class Renewalflow extends BasePage
       sleep();
       click(rejectrenewalbutton);
       sleep();
-      select(rejectreasonforrenewal, "test");
+      select(rejectreasonforrenewal, "Test Child Renewal Reason");
       sleep();
       click(rejectconfirmationbutton);
       sleep();

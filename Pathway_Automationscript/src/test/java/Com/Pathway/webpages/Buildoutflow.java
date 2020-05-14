@@ -25,6 +25,87 @@ public class Buildoutflow extends BasePage
 	private By legalsuerchecklistbox = By.xpath("(.//*[@class='slick-cell l0 r0 true'])[1]");
 	private By sendtofccbuildoutbutton = By.name("approveBtn:0");
 	private By SendoutFCCconfirmatiobuttonforbuildout =By.xpath("(.//*[text()='YES'])[1]");
+	
+	public void createnewbuildoutrequestwithMarketuser(String txid, String rxid, String date)
+	{
+		click(createnewbuildoutbutton);
+		sleep();
+		enterText(txidfiledbox, txid);
+		sleep();
+		enterText(rxfieldboxforbuildout, rxid);
+		sleep();
+		click(searchidbutton);
+		sleep();
+		click(marketuserchicklestbox);
+		sleep();
+		scrollintoelement(dateofcompletedlabel);
+		sleep();
+		Cleartext(selectdatefieldbox);
+		sleep();
+		enterText(selectdatefieldbox, date);
+		sleep();
+		scrollintoelement(proceedbuttonforbuildout);
+		sleep();
+		click(proceedbuttonforbuildout);
+		sleep();
+		click(buildoutconfirmationbutton);
+		sleep();
+		click(okbutton);
+		sleep();
+		
+		}
+	
+	public void buildoutrequestapprovewithRPMuser()
+	{
+		click(rpmchecklistbox);
+		sleep();
+		click(approvebuildoutbutton);
+		sleep();
+		click(buildoutconfirmationbutton);
+		sleep();
+	}
+	public void buildoutrequestrejectwithRPMuser()
+	{
+		click(rpmchecklistbox);
+		sleep();
+		click(rejectforbuildoutbutton);
+		sleep();
+		select(selectrejectreasonforbuildout, "Link no longer needed");
+		sleep();
+		click(rejectconfirmationbutton);
+		sleep();
+	}
+	
+	public void buildoutrequestapprovewithNOCuser()
+	{
+		click(noccheclistboxforbuildout);
+		sleep();
+		click(approvebuildoutbutton);
+		sleep();
+		click(buildoutconfirmationbutton);
+		sleep();
+	}
+	public void buildoutrequestrejectwithNOCuser()
+	{
+		click(noccheclistboxforbuildout);
+		sleep();
+		click(rejectforbuildoutbutton);
+		sleep();
+		select(selectrejectreasonforbuildout, "Link no longer needed");
+		sleep();
+		click(rejectconfirmationbutton);
+		sleep();
+	}
+	public void sendtoFCCbuildoutrequest()
+	{
+		click(legalsuerchecklistbox);
+		sleep();
+		click(sendtofccbuildoutbutton);
+		sleep();
+		click(SendoutFCCconfirmatiobuttonforbuildout);
+		sleep();
+	}
+
 	}
 
 			

@@ -7,7 +7,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-features={"C:\\Users\\saiku\\git\\Pathway\\Pathway_Automationscript\\src\\test\\java\\Featurefiles\\Renewalprocess.feature"},glue="Com.Pathway.Stepdefinations",
+features={"C:\\Users\\saiku\\git\\Pathway\\Pathway_Automationscript\\src\\test\\java\\Featurefiles\\Buildoutflow.feature"},glue="Com.Pathway.Stepdefinations",
 monochrome = true,dryRun = false,strict = true,
 format = {
         "pretty",

@@ -1,5 +1,6 @@
 package Com.Pathway.users;
 
+import Com.Pathway.webpages.Buildoutflow;
 import Com.Pathway.webpages.CancelationPage;
 import Com.Pathway.webpages.Homepage;
 import Com.Pathway.webpages.Loginpage;
@@ -13,7 +14,7 @@ public class NOCuser
 	CancelationPage cancel = new CancelationPage();
 	DataRetrival data = new DataRetrival();
 	Renewalflow renewalpage = new Renewalflow();
-	
+	Buildoutflow buildout = new Buildoutflow();
 	public void loginwithNOCUser()
 	{
 		String email = data.getUsername(4);
@@ -45,4 +46,15 @@ public class NOCuser
 			renewalpage.rejectrenewalwithNOCuser();
 		}
 	}
+	public void buildourequestwithNOCuser(String statusoftheapplication)
+	{
+		homepage.Buildoutbutton();		
+		if (statusoftheapplication.equals("Approved"))
+		{
+			buildout.buildoutrequestapprovewithNOCuser();
+		}
+		else {
+			buildout.buildoutrequestrejectwithNOCuser();
+		}
+}
 }

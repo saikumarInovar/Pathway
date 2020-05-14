@@ -1,5 +1,6 @@
 package Com.Pathway.users;
 
+import Com.Pathway.webpages.Buildoutflow;
 import Com.Pathway.webpages.CancelationPage;
 import Com.Pathway.webpages.Homepage;
 import Com.Pathway.webpages.Loginpage;
@@ -14,6 +15,7 @@ public class RPMuser
 	CancelationPage cancel = new CancelationPage();
 	DataRetrival data = new DataRetrival();
 	Renewalflow renewalpage = new Renewalflow();
+	Buildoutflow buildout = new Buildoutflow();
 	public void loginwithRPMUser()
 	{
 		String email = data.getUsername(2);
@@ -44,6 +46,18 @@ public class RPMuser
 		}
 		else {
 			renewalpage.rejectrenewalwithRPMuser();
+		}
+	}
+	
+	public void buildoutrequestwithRPMuser(String statusoftheapplication)
+	{
+		homepage.Buildoutbutton();
+		if (statusoftheapplication.equals("Approved"))
+		{
+			buildout.buildoutrequestapprovewithRPMuser();
+		}
+		else {
+			buildout.buildoutrequestrejectwithRPMuser();
 		}
 	}
 }

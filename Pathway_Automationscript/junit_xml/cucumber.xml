@@ -1,40 +1,137 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="6" time="521.062859">
-<testcase classname="check the  functionality of renewal a sigal with Pathway tool" name="Rise a Renewal request with Market user" time="125.041056">
-<system-out><![CDATA[Given Enter Url of application into the "chrome" browsern for Renewal process.passed
-When Market user loginwith valid credtinals for Renewal process.............passed
-Then Rise a Renewal  request with Marketuser 264............................passed
-Then Logout MarketUser after rise a request for  Renewal process............passed
-]]></system-out>
+<testsuite failures="4" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="65.448902">
+<testcase classname="Check the buildoutflow functionality with Pathway tool" name="Rise a Buildout request with Market user" time="23.470284">
+<failure message="org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document&#10;  (Session info: chrome=81.0.4044.138)&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'LAPTOP-4MG5Q5BI', ip: '192.168.0.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 81.0.4044.138 (8c6c7ba89cc9..., userDataDir: C:\Users\saiku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61515}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 0457701bd12b1a29cf399682f34937ad&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:118)&#13;&#10;&#9;at Com.Pathway.Base.BasePage.click(BasePage.java:37)&#13;&#10;&#9;at Com.Pathway.webpages.Loginpage.doLogin(Loginpage.java:28)&#13;&#10;&#9;at Com.Pathway.users.MarketUser.loginwithMarketUser(MarketUser.java:23)&#13;&#10;&#9;at Com.Pathway.Stepdefinations.Buildoutflow.market_user_loginwith_valid_credtinals_for_BUildOutrequest_process(Buildoutflow.java:34)&#13;&#10;&#9;at ✽.When Market user loginwith valid credtinals for BUildOutrequest process(C:/Users/saiku/git/Pathway/Pathway_Automationscript/src/test/java/Featurefiles/Buildoutflow.feature:7)&#13;&#10;"><![CDATA[Given Enter Url of application into the "chrome" browser for BUildOutrequest.passed
+When Market user loginwith valid credtinals for BUildOutrequest process.....failed
+Then Rise a BUildOut request with Marketuser 268 with date "05-08-2020".....skipped
+Then Logout MarketUser after rise a request for  BUildOut...................skipped
+
+StackTrace:
+org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=81.0.4044.138)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'LAPTOP-4MG5Q5BI', ip: '192.168.0.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 81.0.4044.138 (8c6c7ba89cc9..., userDataDir: C:\Users\saiku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61515}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 0457701bd12b1a29cf399682f34937ad
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:118)
+	at Com.Pathway.Base.BasePage.click(BasePage.java:37)
+	at Com.Pathway.webpages.Loginpage.doLogin(Loginpage.java:28)
+	at Com.Pathway.users.MarketUser.loginwithMarketUser(MarketUser.java:23)
+	at Com.Pathway.Stepdefinations.Buildoutflow.market_user_loginwith_valid_credtinals_for_BUildOutrequest_process(Buildoutflow.java:34)
+	at ✽.When Market user loginwith valid credtinals for BUildOutrequest process(C:/Users/saiku/git/Pathway/Pathway_Automationscript/src/test/java/Featurefiles/Buildoutflow.feature:7)
+]]></failure>
 </testcase>
-<testcase classname="check the  functionality of renewal a sigal with Pathway tool" name="Check the status of Renewal Request with MDU user" time="80.490633">
-<system-out><![CDATA[When MDU user login with valid credtinals for Renewal process...............passed
-Then MDU user "Approved" Renewal signal.....................................passed
-Then Logout MDU user after check the status of Renewal request..............passed
-]]></system-out>
+<testcase classname="Check the buildoutflow functionality with Pathway tool" name="Check the status of BUildOut Request with RPM user" time="15.36371">
+<failure message="org.openqa.selenium.ElementNotInteractableException: element not interactable&#10;  (Session info: chrome=81.0.4044.138)&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'LAPTOP-4MG5Q5BI', ip: '192.168.0.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 81.0.4044.138 (8c6c7ba89cc9..., userDataDir: C:\Users\saiku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61515}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 0457701bd12b1a29cf399682f34937ad&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)&#13;&#10;&#9;at Com.Pathway.Base.BasePage.click(BasePage.java:36)&#13;&#10;&#9;at Com.Pathway.webpages.Loginpage.loginwithsecondaccount(Loginpage.java:43)&#13;&#10;&#9;at Com.Pathway.Stepdefinations.Buildoutflow.rpm_user_login_with_valid_credtinals_for_BUildOut_process(Buildoutflow.java:51)&#13;&#10;&#9;at ✽.When RPM user login with valid credtinals for BUildOut process(C:/Users/saiku/git/Pathway/Pathway_Automationscript/src/test/java/Featurefiles/Buildoutflow.feature:13)&#13;&#10;"><![CDATA[When RPM user login with valid credtinals for BUildOut process..............failed
+Then RPM user "Approved" BUildOut request signal............................skipped
+Then Logout RPM user after check the status of BUildOut request.............skipped
+
+StackTrace:
+org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=81.0.4044.138)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'LAPTOP-4MG5Q5BI', ip: '192.168.0.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 81.0.4044.138 (8c6c7ba89cc9..., userDataDir: C:\Users\saiku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61515}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 0457701bd12b1a29cf399682f34937ad
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at Com.Pathway.Base.BasePage.click(BasePage.java:36)
+	at Com.Pathway.webpages.Loginpage.loginwithsecondaccount(Loginpage.java:43)
+	at Com.Pathway.Stepdefinations.Buildoutflow.rpm_user_login_with_valid_credtinals_for_BUildOut_process(Buildoutflow.java:51)
+	at ✽.When RPM user login with valid credtinals for BUildOut process(C:/Users/saiku/git/Pathway/Pathway_Automationscript/src/test/java/Featurefiles/Buildoutflow.feature:13)
+]]></failure>
 </testcase>
-<testcase classname="check the  functionality of renewal a sigal with Pathway tool" name="Check the staus of the Renewal Request with MO user" time="81.415149">
-<system-out><![CDATA[When MO user login with valid credtinals for Renewal process................passed
-Then MO user "Approved" Renewal Signal......................................passed
-Then Logout MO user after check the status of Renewal request...............passed
-]]></system-out>
+<testcase classname="Check the buildoutflow functionality with Pathway tool" name="Check the staus of the BUildOutrequest  with NOC user" time="7.45715">
+<failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(.//*[@data-bind='imgSrc'])[5]&quot;}&#10;  (Session info: chrome=81.0.4044.138)&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'LAPTOP-4MG5Q5BI', ip: '192.168.0.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 81.0.4044.138 (8c6c7ba89cc9..., userDataDir: C:\Users\saiku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61515}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 0457701bd12b1a29cf399682f34937ad&#10;*** Element info: {Using=xpath, value=(.//*[@data-bind='imgSrc'])[5]}&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)&#13;&#10;&#9;at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)&#13;&#10;&#9;at Com.Pathway.Base.BasePage.click(BasePage.java:35)&#13;&#10;&#9;at Com.Pathway.webpages.Loginpage.loginwithThirdaccount(Loginpage.java:48)&#13;&#10;&#9;at Com.Pathway.Stepdefinations.Buildoutflow.noc_user_login_with_valid_credtinals_for_BUildOutrequest_process(Buildoutflow.java:67)&#13;&#10;&#9;at ✽.When NOC user login with valid credtinals for BUildOutrequest process(C:/Users/saiku/git/Pathway/Pathway_Automationscript/src/test/java/Featurefiles/Buildoutflow.feature:20)&#13;&#10;"><![CDATA[When NOC user login with valid credtinals for BUildOutrequest process.......failed
+Then NOC user "Approved" BUildOutrequest Signal.............................skipped
+Then Logout NOC user after check the status of BUildOutrequest..............skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(.//*[@data-bind='imgSrc'])[5]"}
+  (Session info: chrome=81.0.4044.138)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'LAPTOP-4MG5Q5BI', ip: '192.168.0.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 81.0.4044.138 (8c6c7ba89cc9..., userDataDir: C:\Users\saiku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61515}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 0457701bd12b1a29cf399682f34937ad
+*** Element info: {Using=xpath, value=(.//*[@data-bind='imgSrc'])[5]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at Com.Pathway.Base.BasePage.click(BasePage.java:35)
+	at Com.Pathway.webpages.Loginpage.loginwithThirdaccount(Loginpage.java:48)
+	at Com.Pathway.Stepdefinations.Buildoutflow.noc_user_login_with_valid_credtinals_for_BUildOutrequest_process(Buildoutflow.java:67)
+	at ✽.When NOC user login with valid credtinals for BUildOutrequest process(C:/Users/saiku/git/Pathway/Pathway_Automationscript/src/test/java/Featurefiles/Buildoutflow.feature:20)
+]]></failure>
 </testcase>
-<testcase classname="check the  functionality of renewal a sigal with Pathway tool" name="Check the status of the Renewal Request with RPM user" time="81.336694">
-<system-out><![CDATA[When RPM user login with Valid credtinals for Renewal process...............passed
-Then RPM user "Approved" Renewal signal.....................................passed
-Then Logout RPM user after suucesful check the status of Renewal Process....passed
-]]></system-out>
-</testcase>
-<testcase classname="check the  functionality of renewal a sigal with Pathway tool" name="Check the status of the Renewal Request with NOC user" time="68.152989">
-<system-out><![CDATA[When NOC user login with Valid credtinals for Renewal process...............passed
-Then NOC user "Approved" Renewal signal.....................................passed
-Then Logout NOC user after suucesful check the status of Renewal Process....passed
-]]></system-out>
-</testcase>
-<testcase classname="check the  functionality of renewal a sigal with Pathway tool" name="Check the status of the Renewal Request Legal user" time="84.626338">
-<system-out><![CDATA[When LEGAL user login with valid credtinals for Renewal Process.............passed
-Then Request send to FCC with Legal user FOR Renewal PROCESS................passed
-Then Logout LEGAL user after succesful Renewal Request Send to FCC..........passed
-]]></system-out>
+<testcase classname="Check the buildoutflow functionality with Pathway tool" name="Check the status of the BUildOutrequest Legal user" time="19.157758">
+<failure message="org.openqa.selenium.WebDriverException: chrome not reachable&#10;  (Session info: chrome=81.0.4044.138)&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'LAPTOP-4MG5Q5BI', ip: '192.168.0.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 81.0.4044.138 (8c6c7ba89cc9..., userDataDir: C:\Users\saiku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61515}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 0457701bd12b1a29cf399682f34937ad&#10;*** Element info: {Using=xpath, value=(.//*[@data-bind='imgSrc'])[7]}&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)&#13;&#10;&#9;at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)&#13;&#10;&#9;at Com.Pathway.Base.BasePage.click(BasePage.java:35)&#13;&#10;&#9;at Com.Pathway.webpages.Loginpage.loginwithFourthaccount(Loginpage.java:53)&#13;&#10;&#9;at Com.Pathway.Stepdefinations.Buildoutflow.legal_user_login_with_valid_credtinals_for_BUildOutrequest(Buildoutflow.java:83)&#13;&#10;&#9;at ✽.When LEGAL user login with valid credtinals for BUildOutrequest(C:/Users/saiku/git/Pathway/Pathway_Automationscript/src/test/java/Featurefiles/Buildoutflow.feature:26)&#13;&#10;"><![CDATA[When LEGAL user login with valid credtinals for BUildOutrequest.............failed
+Then Request send to FCC with Legal user FOR BUildOutrequest................skipped
+Then Logout LEGAL user after succesful BUildOutrequest Send to FCC..........skipped
+
+StackTrace:
+org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=81.0.4044.138)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'LAPTOP-4MG5Q5BI', ip: '192.168.0.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 81.0.4044.138 (8c6c7ba89cc9..., userDataDir: C:\Users\saiku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61515}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 0457701bd12b1a29cf399682f34937ad
+*** Element info: {Using=xpath, value=(.//*[@data-bind='imgSrc'])[7]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at Com.Pathway.Base.BasePage.click(BasePage.java:35)
+	at Com.Pathway.webpages.Loginpage.loginwithFourthaccount(Loginpage.java:53)
+	at Com.Pathway.Stepdefinations.Buildoutflow.legal_user_login_with_valid_credtinals_for_BUildOutrequest(Buildoutflow.java:83)
+	at ✽.When LEGAL user login with valid credtinals for BUildOutrequest(C:/Users/saiku/git/Pathway/Pathway_Automationscript/src/test/java/Featurefiles/Buildoutflow.feature:26)
+]]></failure>
 </testcase>
 </testsuite>

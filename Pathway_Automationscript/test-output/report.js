@@ -1,16 +1,16 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/saiku/git/Pathway/Pathway_Automationscript/src/test/java/Featurefiles/Renewalprocess.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/saiku/git/Pathway/Pathway_Automationscript/src/test/java/Featurefiles/Buildoutflow.feature");
 formatter.feature({
   "line": 1,
-  "name": "check the  functionality of renewal a sigal with Pathway tool",
+  "name": "Check the buildoutflow functionality with Pathway tool",
   "description": "",
-  "id": "check-the--functionality-of-renewal-a-sigal-with-pathway-tool",
+  "id": "check-the-buildoutflow-functionality-with-pathway-tool",
   "keyword": "Feature"
 });
 formatter.scenario({
   "line": 4,
-  "name": "Rise a Renewal request with Market user",
+  "name": "Rise a Buildout request with Market user",
   "description": "",
-  "id": "check-the--functionality-of-renewal-a-sigal-with-pathway-tool;rise-a-renewal-request-with-market-user",
+  "id": "check-the-buildoutflow-functionality-with-pathway-tool;rise-a-buildout-request-with-market-user",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
@@ -22,22 +22,22 @@ formatter.scenario({
 });
 formatter.step({
   "line": 6,
-  "name": "Enter Url of application into the \"chrome\" browsern for Renewal process",
+  "name": "Enter Url of application into the \"chrome\" browser for BUildOutrequest",
   "keyword": "Given "
 });
 formatter.step({
   "line": 7,
-  "name": "Market user loginwith valid credtinals for Renewal process",
+  "name": "Market user loginwith valid credtinals for BUildOutrequest process",
   "keyword": "When "
 });
 formatter.step({
   "line": 8,
-  "name": "Rise a Renewal  request with Marketuser 264",
+  "name": "Rise a BUildOut request with Marketuser 268 with date \"05-08-2020\"",
   "keyword": "Then "
 });
 formatter.step({
   "line": 9,
-  "name": "Logout MarketUser after rise a request for  Renewal process",
+  "name": "Logout MarketUser after rise a request for  BUildOut",
   "keyword": "Then "
 });
 formatter.match({
@@ -47,44 +47,47 @@ formatter.match({
       "offset": 35
     }
   ],
-  "location": "Renewalflowprocess.enter_Url_of_application_into_the_browsern_for_Renewal_process(String)"
+  "location": "Buildoutflow.enter_Url_of_application_into_the_browser_for_BUildOutrequest(String)"
 });
 formatter.result({
-  "duration": 20291722000,
+  "duration": 18066104100,
   "status": "passed"
 });
 formatter.match({
-  "location": "Renewalflowprocess.market_user_loginwith_valid_credtinals_for_Renewal_process()"
+  "location": "Buildoutflow.market_user_loginwith_valid_credtinals_for_BUildOutrequest_process()"
 });
 formatter.result({
-  "duration": 26853046100,
-  "status": "passed"
+  "duration": 5404180000,
+  "error_message": "org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document\n  (Session info: chrome\u003d81.0.4044.138)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html\nBuild info: version: \u00273.14.0\u0027, revision: \u0027aacccce0\u0027, time: \u00272018-08-02T20:19:58.91Z\u0027\nSystem info: host: \u0027LAPTOP-4MG5Q5BI\u0027, ip: \u0027192.168.0.4\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_251\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 81.0.4044.138 (8c6c7ba89cc9..., userDataDir: C:\\Users\\saiku\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61515}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 0457701bd12b1a29cf399682f34937ad\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:118)\r\n\tat Com.Pathway.Base.BasePage.click(BasePage.java:37)\r\n\tat Com.Pathway.webpages.Loginpage.doLogin(Loginpage.java:28)\r\n\tat Com.Pathway.users.MarketUser.loginwithMarketUser(MarketUser.java:23)\r\n\tat Com.Pathway.Stepdefinations.Buildoutflow.market_user_loginwith_valid_credtinals_for_BUildOutrequest_process(Buildoutflow.java:34)\r\n\tat ✽.When Market user loginwith valid credtinals for BUildOutrequest process(C:/Users/saiku/git/Pathway/Pathway_Automationscript/src/test/java/Featurefiles/Buildoutflow.feature:7)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "264",
+      "val": "268",
       "offset": 40
+    },
+    {
+      "val": "05-08-2020",
+      "offset": 55
     }
   ],
-  "location": "Renewalflowprocess.rise_a_Renewal_request_with_Marketuser(int)"
+  "location": "Buildoutflow.rise_a_BUildOut_request_with_Marketuser(int,String)"
 });
 formatter.result({
-  "duration": 66812295200,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
-  "location": "Renewalflowprocess.logout_MarketUser_after_rise_a_request_for_Renewal_process()"
+  "location": "Buildoutflow.logout_MarketUser_after_rise_a_request_for_BUildOut()"
 });
 formatter.result({
-  "duration": 11083992900,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.scenario({
   "line": 11,
-  "name": "Check the status of Renewal Request with MDU user",
+  "name": "Check the status of BUildOut Request with RPM user",
   "description": "",
-  "id": "check-the--functionality-of-renewal-a-sigal-with-pathway-tool;check-the-status-of-renewal-request-with-mdu-user",
+  "id": "check-the-buildoutflow-functionality-with-pathway-tool;check-the-status-of-buildout-request-with-rpm-user",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
@@ -96,25 +99,26 @@ formatter.scenario({
 });
 formatter.step({
   "line": 13,
-  "name": "MDU user login with valid credtinals for Renewal process",
+  "name": "RPM user login with valid credtinals for BUildOut process",
   "keyword": "When "
 });
 formatter.step({
   "line": 14,
-  "name": "MDU user \"Approved\" Renewal signal",
+  "name": "RPM user \"Approved\" BUildOut request signal",
   "keyword": "Then "
 });
 formatter.step({
   "line": 15,
-  "name": "Logout MDU user after check the status of Renewal request",
+  "name": "Logout RPM user after check the status of BUildOut request",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Renewalflowprocess.mdu_user_login_with_valid_credtinals_for_Renewal_process()"
+  "location": "Buildoutflow.rpm_user_login_with_valid_credtinals_for_BUildOut_process()"
 });
 formatter.result({
-  "duration": 49165751200,
-  "status": "passed"
+  "duration": 15363709500,
+  "error_message": "org.openqa.selenium.ElementNotInteractableException: element not interactable\n  (Session info: chrome\u003d81.0.4044.138)\nBuild info: version: \u00273.14.0\u0027, revision: \u0027aacccce0\u0027, time: \u00272018-08-02T20:19:58.91Z\u0027\nSystem info: host: \u0027LAPTOP-4MG5Q5BI\u0027, ip: \u0027192.168.0.4\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_251\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 81.0.4044.138 (8c6c7ba89cc9..., userDataDir: C:\\Users\\saiku\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61515}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 0457701bd12b1a29cf399682f34937ad\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)\r\n\tat Com.Pathway.Base.BasePage.click(BasePage.java:36)\r\n\tat Com.Pathway.webpages.Loginpage.loginwithsecondaccount(Loginpage.java:43)\r\n\tat Com.Pathway.Stepdefinations.Buildoutflow.rpm_user_login_with_valid_credtinals_for_BUildOut_process(Buildoutflow.java:51)\r\n\tat ✽.When RPM user login with valid credtinals for BUildOut process(C:/Users/saiku/git/Pathway/Pathway_Automationscript/src/test/java/Featurefiles/Buildoutflow.feature:13)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "arguments": [
@@ -123,24 +127,22 @@ formatter.match({
       "offset": 10
     }
   ],
-  "location": "Renewalflowprocess.mdu_user_Renewal_signal(String)"
+  "location": "Buildoutflow.rpm_user_BUildOut_request_signal(String)"
 });
 formatter.result({
-  "duration": 20552991100,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
-  "location": "Renewalflowprocess.logout_MDU_user_after_check_the_status_of_Renewal_request()"
+  "location": "Buildoutflow.logout_RPM_user_after_check_the_status_of_BUildOut_request()"
 });
 formatter.result({
-  "duration": 10771890700,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.scenario({
   "line": 18,
-  "name": "Check the staus of the Renewal Request with MO user",
+  "name": "Check the staus of the BUildOutrequest  with NOC user",
   "description": "",
-  "id": "check-the--functionality-of-renewal-a-sigal-with-pathway-tool;check-the-staus-of-the-renewal-request-with-mo-user",
+  "id": "check-the-buildoutflow-functionality-with-pathway-tool;check-the-staus-of-the-buildoutrequest--with-noc-user",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
@@ -152,51 +154,50 @@ formatter.scenario({
 });
 formatter.step({
   "line": 20,
-  "name": "MO user login with valid credtinals for Renewal process",
+  "name": "NOC user login with valid credtinals for BUildOutrequest process",
   "keyword": "When "
 });
 formatter.step({
   "line": 21,
-  "name": "MO user \"Approved\" Renewal Signal",
+  "name": "NOC user \"Approved\" BUildOutrequest Signal",
   "keyword": "Then "
 });
 formatter.step({
   "line": 22,
-  "name": "Logout MO user after check the status of Renewal request",
+  "name": "Logout NOC user after check the status of BUildOutrequest",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Renewalflowprocess.mo_user_login_with_valid_credtinals_for_Renewal_process()"
+  "location": "Buildoutflow.noc_user_login_with_valid_credtinals_for_BUildOutrequest_process()"
 });
 formatter.result({
-  "duration": 50023448400,
-  "status": "passed"
+  "duration": 7457150400,
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"(.//*[@data-bind\u003d\u0027imgSrc\u0027])[5]\"}\n  (Session info: chrome\u003d81.0.4044.138)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.14.0\u0027, revision: \u0027aacccce0\u0027, time: \u00272018-08-02T20:19:58.91Z\u0027\nSystem info: host: \u0027LAPTOP-4MG5Q5BI\u0027, ip: \u0027192.168.0.4\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_251\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 81.0.4044.138 (8c6c7ba89cc9..., userDataDir: C:\\Users\\saiku\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61515}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 0457701bd12b1a29cf399682f34937ad\n*** Element info: {Using\u003dxpath, value\u003d(.//*[@data-bind\u003d\u0027imgSrc\u0027])[5]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)\r\n\tat Com.Pathway.Base.BasePage.click(BasePage.java:35)\r\n\tat Com.Pathway.webpages.Loginpage.loginwithThirdaccount(Loginpage.java:48)\r\n\tat Com.Pathway.Stepdefinations.Buildoutflow.noc_user_login_with_valid_credtinals_for_BUildOutrequest_process(Buildoutflow.java:67)\r\n\tat ✽.When NOC user login with valid credtinals for BUildOutrequest process(C:/Users/saiku/git/Pathway/Pathway_Automationscript/src/test/java/Featurefiles/Buildoutflow.feature:20)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "arguments": [
     {
       "val": "Approved",
-      "offset": 9
+      "offset": 10
     }
   ],
-  "location": "Renewalflowprocess.mo_user_Renewal_Signal(String)"
+  "location": "Buildoutflow.noc_user_BUildOutrequest_Signal(String)"
 });
 formatter.result({
-  "duration": 20627177400,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
-  "location": "Renewalflowprocess.logout_MO_user_after_check_the_status_of_Renewal_request()"
+  "location": "Buildoutflow.logout_NOC_user_after_check_the_status_of_BUildOutrequest()"
 });
 formatter.result({
-  "duration": 10764523100,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.scenario({
-  "line": 26,
-  "name": "Check the status of the Renewal Request with RPM user",
+  "line": 25,
+  "name": "Check the status of the BUildOutrequest Legal user",
   "description": "",
-  "id": "check-the--functionality-of-renewal-a-sigal-with-pathway-tool;check-the-status-of-the-renewal-request-with-rpm-user",
+  "id": "check-the-buildoutflow-functionality-with-pathway-tool;check-the-status-of-the-buildoutrequest-legal-user",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
@@ -207,151 +208,38 @@ formatter.scenario({
   ]
 });
 formatter.step({
+  "line": 26,
+  "name": "LEGAL user login with valid credtinals for BUildOutrequest",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 27,
+  "name": "Request send to FCC with Legal user FOR BUildOutrequest",
+  "keyword": "Then "
+});
+formatter.step({
   "line": 28,
-  "name": "RPM user login with Valid credtinals for Renewal process",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 29,
-  "name": "RPM user \"Approved\" Renewal signal",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 30,
-  "name": "Logout RPM user after suucesful check the status of Renewal Process",
+  "name": "Logout LEGAL user after succesful BUildOutrequest Send to FCC",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Renewalflowprocess.rpm_user_login_with_Valid_credtinals_for_Renewal_process()"
+  "location": "Buildoutflow.legal_user_login_with_valid_credtinals_for_BUildOutrequest()"
 });
 formatter.result({
-  "duration": 49723642600,
-  "status": "passed"
+  "duration": 19157758100,
+  "error_message": "org.openqa.selenium.WebDriverException: chrome not reachable\n  (Session info: chrome\u003d81.0.4044.138)\nBuild info: version: \u00273.14.0\u0027, revision: \u0027aacccce0\u0027, time: \u00272018-08-02T20:19:58.91Z\u0027\nSystem info: host: \u0027LAPTOP-4MG5Q5BI\u0027, ip: \u0027192.168.0.4\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_251\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 81.0.4044.138 (8c6c7ba89cc9..., userDataDir: C:\\Users\\saiku\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61515}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 0457701bd12b1a29cf399682f34937ad\n*** Element info: {Using\u003dxpath, value\u003d(.//*[@data-bind\u003d\u0027imgSrc\u0027])[7]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)\r\n\tat Com.Pathway.Base.BasePage.click(BasePage.java:35)\r\n\tat Com.Pathway.webpages.Loginpage.loginwithFourthaccount(Loginpage.java:53)\r\n\tat Com.Pathway.Stepdefinations.Buildoutflow.legal_user_login_with_valid_credtinals_for_BUildOutrequest(Buildoutflow.java:83)\r\n\tat ✽.When LEGAL user login with valid credtinals for BUildOutrequest(C:/Users/saiku/git/Pathway/Pathway_Automationscript/src/test/java/Featurefiles/Buildoutflow.feature:26)\r\n",
+  "status": "failed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "Approved",
-      "offset": 10
-    }
-  ],
-  "location": "Renewalflowprocess.rpm_user_Renewal_signal(String)"
+  "location": "Buildoutflow.request_send_to_FCC_with_Legal_user_FOR_BUildOutrequest()"
 });
 formatter.result({
-  "duration": 20540466000,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
-  "location": "Renewalflowprocess.logout_RPM_user_after_suucesful_check_the_status_of_Renewal_Process()"
+  "location": "Buildoutflow.logout_LEGAL_user_after_succesful_BUildOutrequest_Send_to_FCC()"
 });
 formatter.result({
-  "duration": 11072585100,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 34,
-  "name": "Check the status of the Renewal Request with NOC user",
-  "description": "",
-  "id": "check-the--functionality-of-renewal-a-sigal-with-pathway-tool;check-the-status-of-the-renewal-request-with-noc-user",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 32,
-      "name": "@tag5"
-    }
-  ]
-});
-formatter.step({
-  "line": 36,
-  "name": "NOC user login with Valid credtinals for Renewal process",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 37,
-  "name": "NOC user \"Approved\" Renewal signal",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 38,
-  "name": "Logout NOC user after suucesful check the status of Renewal Process",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "Renewalflowprocess.noc_user_login_with_Valid_credtinals_for_Renewal_process()"
-});
-formatter.result({
-  "duration": 36537349800,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Approved",
-      "offset": 10
-    }
-  ],
-  "location": "Renewalflowprocess.noc_user_Renewal_signal(String)"
-});
-formatter.result({
-  "duration": 20648802200,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Renewalflowprocess.logout_NOC_user_after_suucesful_check_the_status_of_Renewal_Process()"
-});
-formatter.result({
-  "duration": 10966837200,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 41,
-  "name": "Check the status of the Renewal Request Legal user",
-  "description": "",
-  "id": "check-the--functionality-of-renewal-a-sigal-with-pathway-tool;check-the-status-of-the-renewal-request-legal-user",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 40,
-      "name": "@tag6"
-    }
-  ]
-});
-formatter.step({
-  "line": 42,
-  "name": "LEGAL user login with valid credtinals for Renewal Process",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 43,
-  "name": "Request send to FCC with Legal user FOR Renewal PROCESS",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 44,
-  "name": "Logout LEGAL user after succesful Renewal Request Send to FCC",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "Renewalflowprocess.legal_user_login_with_valid_credtinals_for_Renewal_Process()"
-});
-formatter.result({
-  "duration": 53165917300,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Renewalflowprocess.request_send_to_FCC_with_Legal_user_FOR_Renewal_PROCESS()"
-});
-formatter.result({
-  "duration": 20572393400,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Renewalflowprocess.logout_LEGAL_user_after_succesful_Renewal_Request_Send_to_FCC()"
-});
-formatter.result({
-  "duration": 10888027500,
-  "status": "passed"
+  "status": "skipped"
 });
 });

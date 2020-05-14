@@ -1,5 +1,6 @@
 package Com.Pathway.users;
 
+import Com.Pathway.webpages.Buildoutflow;
 import Com.Pathway.webpages.CancelationPage;
 import Com.Pathway.webpages.Homepage;
 import Com.Pathway.webpages.Loginpage;
@@ -13,15 +14,12 @@ public class MarketUser
 	CancelationPage cancel = new CancelationPage();
 	Renewalflow renewalpage = new Renewalflow();
 	DataRetrival data = new DataRetrival();
+	Buildoutflow buildout = new Buildoutflow();
 	
 	public void loginwithMarketUser()
 	{
 		String email = data.getUsername(1);
 		String password = data.getPassword(1);
-		/*
-		 * String email = data.getUsername(1); String password = data.getPassword(1);
-		 * System.out.println(email); System.out.println(password);
-		 */
 		login.doLogin(email, password);
 	}
 	
@@ -39,5 +37,12 @@ public class MarketUser
 		String rxid = data.getColumn_2(i);
 		homepage.renewalbutton();
 		renewalpage.renewalrequestwithmarketuser(txid, rxid);
+	}
+	public void buildoutrequest(int i, String date)
+	{
+		String txid = data.getColumn_1(i);
+		String rxid = data.getColumn_2(i);
+		homepage.Buildoutbutton();
+		buildout.createnewbuildoutrequestwithMarketuser(txid, rxid, date);
 	}
 }
